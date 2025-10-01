@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan Agus & Dewi</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fffdf7;
+      color: #444;
+      text-align: center;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),
+                  url('https://images.unsplash.com/photo-1529634806980-98c3b1f631b6?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      color: white;
+      padding: 120px 20px;
+      animation: fadeIn 2s ease-in;
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4em;
+      margin-bottom: 10px;
+      color: #FFD700; /* gold */
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.3em;
+      margin-bottom: 20px;
+    }
+    .countdown {
+      margin-top: 20px;
+      font-size: 1.5em;
+      background: rgba(255, 215, 0, 0.25);
+      display: inline-block;
+      padding: 10px 25px;
+      border-radius: 20px;
+      color: #FFD700;
+      border: 1px solid #FFD700;
+    }
+    section {
+      padding: 60px 20px;
+      animation: fadeInUp 1s ease;
+    }
+    .love {
+      font-size: 2.5em;
+      color: #FFD700;
+      animation: pulse 2s infinite;
+    }
+    .info {
+      max-width: 750px;
+      margin: auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      border: 2px solid #FFD700;
+      box-shadow: 0 8px 20px rgba(255,215,0,0.3);
+    }
+    h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.8em;
+      color: #FFD700;
+      margin-bottom: 15px;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .gallery img {
+      width: 250px;
+      border-radius: 15px;
+      margin: 10px;
+      transition: transform .4s, box-shadow .3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border: 3px solid #FFD700;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(255,215,0,0.5);
+    }
+    .rsvp {
+      margin-top: 30px;
+    }
+    input, select, button {
+      padding: 12px;
+      margin: 7px;
+      border-radius: 10px;
+      border: 1px solid #FFD700;
+      font-size: 1em;
+    }
+    button {
+      background: linear-gradient(45deg, #FFD700, #DAA520);
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: linear-gradient(45deg, #DAA520, #FFD700);
+      transform: scale(1.05);
+    }
+    iframe {
+      margin-top: 20px;
+      border-radius: 15px;
+      border: 2px solid #FFD700;
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+    }
+    footer {
+      background: #FFD700;
+      color: #222;
+      padding: 20px;
+      font-size: 0.9em;
+      font-weight: 600;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Agus & Dewi</h1>
+    <p>Kami mengundang Anda ke hari bahagia kami</p>
+    <div class="countdown" id="countdown"></div>
+  </header>
+
+  <!-- Informasi -->
+  <section>
+    <div class="info">
+      <p class="love">💛</p>
+      <h2>Acara Pernikahan</h2>
+      <p>Dengan penuh kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam pernikahan kami.</p>
+      <p><b>Tanggal:</b> 25 Oktober 2025</p>
+      <p><b>Lokasi:</b> Atlas Beach Club, Bali</p>
+    </div>
+  </section>
+
+  <!-- Galeri -->
+  <section>
+    <h2>Galeri</h2>
+    <div class="gallery">
+      <img src="https://picsum.photos/id/1011/300/200" alt="foto1">
+      <img src="https://picsum.photos/id/1012/300/200" alt="foto2">
+      <img src="https://picsum.photos/id/1015/300/200" alt="foto3">
+    </div>
+  </section>
+
+  <!-- Maps -->
+  <section>
+    <h2>Lokasi</h2>
+    <p>Silakan gunakan Google Maps untuk menemukan lokasi acara:</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1723029018647!2d115.15961107401774!3d-8.672660187596679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd246b153b7ed2f%3A0xd46b257a7b82d49b!2sAtlas%20Beach%20Club!5e0!3m2!1sid!2sid!4v1696173039470!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <!-- RSVP -->
+  <section>
+    <h2>Konfirmasi Kehadiran (RSVP)</h2>
+    <div class="rsvp">
+      <input type="text" id="nama" placeholder="Nama Anda">
+      <select id="status">
+        <option value="Hadir">Hadir</option>
+        <option value="Tidak Hadir">Tidak Hadir</option>
+      </select>
+      <button onclick="kirimRSVP()">Kirim</button>
+      <p id="output"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>💛 Terima kasih atas doa & restunya 💛</p>
+    <p>&copy; Agus & Dewi Wedding 2025</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Countdown
+    const targetDate = new Date("Oct 25, 2025 09:00:00").getTime();
+    const countdown = document.getElementById("countdown");
+
+    setInterval(function() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerHTML = days + " Hari " + hours + " Jam " + minutes + " Menit " + seconds + " Detik ";
+
+      if (distance < 0) {
+        countdown.innerHTML = "Acara Sedang Berlangsung!";
+      }
+    }, 1000);
+
+    // RSVP
+    function kirimRSVP() {
+      const nama = document.getElementById("nama").value;
+      const status = document.getElementById("status").value;
+      const output = document.getElementById("output");
+
+      if(nama.trim() === "") {
+        output.innerHTML = "⚠️ Harap isi nama Anda!";
+        output.style.color = "red";
+        return;
+      }
+
+      output.innerHTML = `💌 Terima kasih <b>${nama}</b>, konfirmasi Anda: <b>${status}</b>`;
+      output.style.color = "#FFD700";
+    }
+  </script>
+</body>
+</html>
